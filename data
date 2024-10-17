@@ -1,0 +1,67 @@
+# Justification of Dataset Choice
+
+## Relevance
+The chosen HR Analytics dataset is directly relevant to the study of employee withdrawal behavior from retirement funds. It contains critical features such as:
+- **Age**: Influences retirement planning and withdrawal tendencies.
+- **Monthly Income**: Higher income levels may correlate with different savings behaviors.
+- **Total Working Years**: Indicates experience and potential financial stability.
+- **Years at Company**: Affects loyalty and likelihood of withdrawals.
+- **Distance from Home**: Can influence job satisfaction and financial decisions.
+
+These features allow for a comprehensive analysis of factors that may lead to early fund withdrawals, aligning with the objectives of the two-pot system.
+
+## Completeness
+The dataset includes a sufficient number of observations to ensure robust analysis. A larger sample size enhances the reliability of the models used for predictions. Furthermore, the dataset captures a range of employee demographics, allowing for an in-depth exploration of different segments within the workforce.
+
+## Diversity
+The dataset represents a diverse population of employees across various roles and departments. This diversity is crucial for understanding how different employee characteristics and backgrounds influence withdrawal behaviors. The inclusion of categorical variables, such as department and gender, enables the modeling of complex interactions that may affect financial decisions.
+
+## Relation to Two-Pot System Objectives
+Understanding the factors that contribute to employee withdrawals is essential for achieving the objectives of the two-pot system, which aims to ensure long-term financial stability and savings for employees. The insights gained from analyzing this dataset will help:
+- **Identify At-Risk Segments**: By predicting which employees are likely to withdraw funds, financial institutions can implement targeted interventions to assist those at risk.
+- **Inform Policy Development**: The analysis will provide valuable insights to policymakers regarding the impact of the two-pot system on long-term savings, enabling them to monitor and adjust policies as necessary.
+- **Optimize Financial Planning**: By understanding withdrawal patterns, organizations can better anticipate liquidity needs and tailor financial products to meet employee requirements.
+
+In conclusion, the HR Analytics dataset is not only relevant but also comprehensive and diverse, making it an ideal choice for analyzing employee behaviors concerning retirement fund withdrawals in the context of the two-pot system.
+
+ # Applying Sentiment Analysis to Employee Feedback on the Two-Pot System
+
+To gain insights from employee feedback on the two-pot retirement system, sentiment analysis can be employed to classify the feedback into three categories: **positive**, **negative**, or **neutral**. Here’s a step-by-step outline of how sentiment analysis can be applied in this context:
+
+## 1. Data Collection and Preprocessing
+- **Data Collection**: Collect employee feedback from surveys, questionnaires, or interviews. The data may be in text form, such as comments or written responses.
+- **Data Cleaning**: Preprocess the text data to remove noise and irrelevant information. This step includes:
+  - Removing special characters, punctuation, and numbers.
+  - Lowercasing all text to ensure consistency.
+  - Removing stopwords (e.g., “and,” “the,” “in”), which do not contribute to sentiment.
+  - Stemming or lemmatizing words to reduce them to their base forms (e.g., “investing” to “invest”).
+
+## 2. Tokenization
+- Split the cleaned text into individual words or tokens to prepare for analysis.
+- This step enables the model to analyze words or phrases, considering their context within the feedback.
+
+## 3. Feature Extraction
+- Bag of Words (BoW): Convert the tokenized text into a numerical format by counting word occurrences.
+- TF-IDF (Term Frequency-Inverse Document Frequency): Apply TF-IDF to weigh words by their importance. This method reduces the impact of frequently occurring but less meaningful words.
+- Word Embeddings: Use word embeddings (e.g., Word2Vec, GloVe, or BERT) to capture the semantic relationships between words. This approach is particularly useful for understanding nuances in feedback.
+
+## 4. Model Selection
+- Choose an appropriate model for sentiment analysis:
+  - Lexicon-Based Approach: Utilize sentiment lexicons (e.g., VADER, AFINN, or SentiWordNet) to assign sentiment scores to words and categorize the overall sentiment.
+  - Machine Learning Models: Use supervised models like Naïve Bayes, Logistic Regression, or Support Vector Machines (SVM) trained on labeled sentiment data.
+  - Deep Learning Models: Implement models like LSTM, GRU, or transformers (e.g., BERT) for more advanced sentiment analysis, especially if there is a large dataset.
+
+## 5. Sentiment Classification
+- Classify each piece of feedback based on sentiment scores or model predictions. The feedback is categorized as:
+  - Positive: Feedback expressing favorable views or satisfaction with the two-pot system.
+  - Negative: Feedback indicating dissatisfaction or criticism of the system.
+  - Neutral: Feedback that is neither particularly positive nor negative or that reflects mixed sentiments.
+
+## 6. Validation and Evaluation
+- Use metrics such as accuracy, precision, recall, and F1-score to evaluate the performance of the sentiment analysis model.
+- Apply cross-validation to ensure that the model generalizes well to new feedback data.
+
+## 7. Analysis and Reporting
+- Summarize the distribution of positive, negative, and neutral sentiments to gauge overall employee perception.
+- Identify key themes or recurring topics within each sentiment category to understand specific concerns or areas of satisfaction.
+- Use this analysis to provide actionable insights to stakeholders regarding employee perspectives on the two-pot system.
